@@ -35,6 +35,7 @@ MyGo Music 的插件是“音源”：宿主向插件要曲目、歌词和播放
 
 ## 如果你想要
 
+- 在 [#1 Apple Music 插件：范围、限制与需求收集](https://github.com/yxxbc/mygo-music-apple-music/issues/1) 点 👍；
 - 用 [Issue 模板](.github/ISSUE_TEMPLATE/apple-music-request.yml) 开一个需求，写清楚使用场景；
 - 在已有需求 issue 上点 👍，不要重复开空 issue；
 - 说明你的 macOS 版本、Music.app 资料库规模、是否接受“只能遥控、不能搜全曲库”。
