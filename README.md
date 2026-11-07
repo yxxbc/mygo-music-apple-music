@@ -1,7 +1,21 @@
 # 蹲一个 Apple Music 插件 · MyGo Music
 
-> **状态：需求收集中，还没有可安装的插件。**
-> 这个仓库不是插件：没有 `plugin.json`，没有 Release，也没有安装链接。安装器不会把它当成插件。
+> **状态更新：已经有一个可用的 Apple Music 插件：[InkCitrus/mygo-music-apple-music](https://github.com/InkCitrus/mygo-music-apple-music)（`id: apple-music`，v0.1.0）。**
+> 本仓库不是插件，也不再是唯一的需求入口：没有 `plugin.json`、没有 Release、没有安装链接，只保留范围说明和指向。
+
+## 已有实现
+
+[InkCitrus/mygo-music-apple-music](https://github.com/InkCitrus/mygo-music-apple-music) 已经实现了这条路：
+
+- `playback: "remote"`，通过 `osascript` 控制 macOS `Music.app` 播放完整曲目；
+- 网页登录 `music.apple.com` 取得 `media-user-token`，不需要 Apple Developer 账号；
+- Apple Music 目录搜索、个人资料库/歌单、喜欢/收藏；
+- Apple 的逐字 TTML 歌词，失败时回退 LRCLIB；
+- AirPlay 输出切换。
+
+安装：`mygo-music://install-plugin?repo=InkCitrus/mygo-music-apple-music`（macOS，需要 Music.app 已登录 Apple Music，并允许插件启动 `osascript`）。
+
+`apple-music` 这个插件 ID 已经被它使用；本仓库不再重复造一个。
 
 ## 为什么单独开这个仓库
 
