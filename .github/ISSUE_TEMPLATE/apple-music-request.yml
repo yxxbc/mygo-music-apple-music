@@ -1,0 +1,51 @@
+name: Apple Music 需求
+description: 说明你想在 MyGo Music 里怎样使用 Apple Music
+title: "[Apple Music] "
+labels: ["apple-music"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这个仓库只收集需求，目前没有可安装的 Apple Music 插件。
+        请先读 README 的“能做到的范围”，特别是“不能搜 Apple Music 全曲库”。
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 使用场景
+      description: 你希望在什么场景下用？例如“用 MyGo 的界面遥控 Music.app 的资料库”。
+      placeholder: 我平时……
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS 版本
+      placeholder: "例如 macOS 26.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: remote
+    attributes:
+      label: 是否接受 macOS Music.app 遥控
+      options:
+        - 接受，只要能在 MyGo 里控制 Music.app
+        - 只接受真正的 Apple Music 音源（不做遥控）
+        - 不确定，想先看原型
+    validations:
+      required: true
+  - type: checkboxes
+    id: features
+    attributes:
+      label: 你需要的功能
+      options:
+        - label: 浏览 Music.app 的资料库
+        - label: 浏览/播放播放列表
+        - label: 搜索用户资料库
+        - label: 播放/暂停/切歌/进度/音量
+        - label: 封面和歌词
+        - label: 搜索 Apple Music 全曲库（当前不可行）
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充
+      description: 资料库规模、常用设备、是否愿意测试等。
